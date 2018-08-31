@@ -1,4 +1,11 @@
-# electron-bp
+<!-- https://simulatedgreg.gitbooks.io/electron-vue/content/en/building_your_app.html -->
+
+<!-- https://github.com/SimulatedGREG/electron-vue -->
+
+
+
+
+ 
 
 > An electron-vue project
 
