@@ -1,0 +1,18 @@
+html { font-size: 18px; box-sizing: border-box; font-family:'Nunito'; }
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: inherit; }
+body,input,div,span,table{
+  font-family:'Nunito';
+}
+
+h1 {    font-family:'Raleway'; }
+
+
+
+input{
+  outline:none;
+  border-radius:1rem;
+  border-color:transparent;
+  background-color:rgba(255,255,255,255,.5);
+  padding:.5rem;
+}

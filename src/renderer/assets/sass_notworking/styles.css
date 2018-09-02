@@ -1,0 +1,66 @@
+.root {
+  background: radial-gradient( ellipse at top left, hsla(212, 63%, 54%, 0.5) 70% ,     hsla(219, 41%, 13%, 0.5)  95% );
+  background-color:#E3E2E1;
+  display:grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template-columns: 2fr 1fr 1fr .25fr;
+  grid-template-rows: 2fr 1fr 1fr .25fr;
+
+
+}
+
+
+.interfaceControls:nth-child(1){
+  background-color:white;
+}
+
+.interfaceControls{
+  background-color:rgba(0,0,0,0.5);
+  grid-row:2/3;
+  grid-column:1/5;
+  text-align:center;
+    mix-blend-mode: hard-light;
+
+}
+
+
+#go{
+ background: repeating-linear-gradient(-45deg,red 0%, yellow 7.14%, rgb(0,255,0) 14.28%, rgb(0,255,255) 21.42%, cyan 28.56%, blue 35.7%, magenta 42.84%, red 50%);
+	background-size:600vw 600vw;
+	animation: goslide 3s infinite linear forwards;
+  
+
+}
+
+.greeting{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+
+}
+
+
+@keyframes slide{
+  0%{
+      background-position-x: 0%;
+      clip-path: polygon(50% 0%, 100% 50%, 50% 100%,  0% 50%    ); }
+25%{  clip-path: polygon(50% 0,   0   50%, 50% 100%, 100% 50%   ); }
+35%{  clip-path: polygon(79% 18%, 100% 47%, 81% 83%, 0 53%      ); }
+50%{  clip-path: polygon(50% 0%, 50%  50%,  50% 50%, 0% 50%     ); }
+75%{  clip-path: polygon(17% 0, 88% 0, 16% 99%, 94% 100%        ); }
+85%{  clip-path: polygon(100% 25%, 100%  25%,  100% 25%, 0% 25% ); }
+100%{ clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%     );
+       background-position-x: 600vw;
+  }
+}
+@keyframes goslide{
+  0%{
+    transform:rotate(0deg);
+      background-position-x: 0%;
+
+       background-position-x: 600vw;
+       transform:rotate(360deg);
+  }
+}
